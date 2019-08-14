@@ -1,0 +1,37 @@
+<h1>Show Staff</h1>
+
+<ul>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @staff.email %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @staff.name %>
+  </li>
+
+  <li>
+    <strong>Birth date:</strong>
+    <%= @staff.birthDate %>
+  </li>
+
+  <li>
+    <strong>DTS year:</strong>
+    <%= Map.get(@staff, :DTSYear) %>
+  </li>
+
+  <li>
+    <strong>Ministry:</strong>
+    <%= @staff.ministry %>
+  </li>
+
+  <li>
+    <strong>Active:</strong>
+    <%= @staff.active %>
+  </li>
+</ul>
+
+<span><%= link "Edit", to: Routes.staff_path(@conn, :edit, @staff) %></span>
+<span><%= link "Back", to: Routes.staff_path(@conn, :index) %></span>

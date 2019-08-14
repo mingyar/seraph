@@ -1,0 +1,15 @@
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+
+      <h1 class="title ">
+        Editing Staff
+      </h1>
+        <span><%= link "Back", to: Routes.staff_path(@conn, :index) %></span>
+        <br/>
+        <br/>
+        <%= render "form.html", Map.put(assigns, :action, Routes.staff_path(@conn, :update, @staff)) %>      
+        <span><%= link "Back", to: Routes.staff_path(@conn, :index) %></span>
+    </div>
+  </div>
+</section>
