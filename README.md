@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Seraph
 
 To start your Phoenix server:
@@ -19,7 +18,3 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
-=======
-# seraph
-Allow YWAM bases to manage their process easy
->>>>>>> 5c35643d45b201b4a733609fc7b14602c5446206
