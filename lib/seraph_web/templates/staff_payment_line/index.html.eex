@@ -1,0 +1,30 @@
+<h1>Listing Staff payment lines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Due date</th>
+      <th>Value</th>
+      <th>Is payed</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for staff_payment_line <- @staff_payment_lines do %>
+    <tr>
+      <td><%= staff_payment_line.due_date %></td>
+      <td><%= staff_payment_line.value %></td>
+      <td><%= staff_payment_line.is_payed %></td>
+
+      <td>
+        <%= link "Show", to: Routes.staff_payment_line_path(@conn, :show, staff_payment_line) %>
+        <%= link "Edit", to: Routes.staff_payment_line_path(@conn, :edit, staff_payment_line) %>
+        <%= link "Delete", to: Routes.staff_payment_line_path(@conn, :delete, staff_payment_line), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Staff payment line", to: Routes.staff_payment_line_path(@conn, :new) %></span>

@@ -5,48 +5,53 @@
     </div>
   <% end %>
 
-  <%= label f, :email %>
-  <%= email_input f, :email %>
+<div class="field">
+  <%= label f, :email, gettext("Email"), class: "label" %>
+  <div class="control">
+    <%= text_input f, :email, class: "is-small" %>
+  </div>
   <%= error_tag f, :email %>
-  <br/>
-  <br/>
+</div>
 
-  
-  <%= label f, :name %>
-  <%= text_input f, :name %>
+<div class="field">
+  <%= label f, :name, gettext("Name"), class: "label" %>
+  <div class="control">
+    <%= text_input f, :name, class: "is-small" %>
+  </div>
   <%= error_tag f, :name %>
-  <br/>
-  <br/>
+</div>
 
-  <%= label f, :birthDate %>
-  <%= date_input f, :birthDate %>
+<div class="field">
+  <%= label f, :birthDate, gettext("Birth date"), class: "label" %>
+  <div class="control">
+    <%= text_input f, :birthDate %>
+  </div>
   <%= error_tag f, :birthDate %>
-  <br/>
-  <br/>
+</div>
 
-
-  <%= label f, "DTS Year" %>  
-  <%= number_input f, :DTSYear %>
+<div class="field">
+  <%= label f, :DTSYear, gettext("DTS Year"), class: "label" %>
+  <div class="control">
+    <%= text_input f, :DTSYear %>
+  </div>
   <%= error_tag f, :DTSYear %>
-  <br/>
-  <br/>
+</div>
 
-
-  <%= label f, :ministry %>
-  <%= text_input f, :ministry %>
+<div class="field">
+  <%= label f, :ministry, gettext("Ministry"), class: "label" %>
+  <div class="control">
+    <%= text_input f, :ministry %>
+  </div>
   <%= error_tag f, :ministry %>
-  <br/>
-  <br/>
-
+</div>
   
-  <label class="checkbox">
-  <%= checkbox f, :active %>
-  <%= error_tag f, :active %>  
-    Active on the base
-  </label>
-  <br/>
-  <br/>
-
+<div class="checkbox">
+  <%= label f, :ministry, gettext("Active on the base"), class: "label" %>
+  <div class="control">
+    <%= checkbox f, :active %>
+  </div>
+  <%= error_tag f, :active %>
+</div>
   
   <div>
     <%= submit "Save" %>

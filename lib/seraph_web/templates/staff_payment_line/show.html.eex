@@ -1,0 +1,23 @@
+<h1>Show Staff payment line</h1>
+
+<ul>
+
+  <li>
+    <strong>Due date:</strong>
+    <%= @staff_payment_line.due_date %>
+  </li>
+
+  <li>
+    <strong>Value:</strong>
+    <%= @staff_payment_line.value %>
+  </li>
+
+  <li>
+    <strong>Is payed:</strong>
+    <%= @staff_payment_line.is_payed %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.staff_payment_line_path(@conn, :edit, @staff_payment_line) %></span>
+<span><%= link "Back", to: Routes.staff_payment_line_path(@conn, :index) %></span>

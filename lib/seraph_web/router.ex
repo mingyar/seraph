@@ -18,6 +18,7 @@ defmodule SeraphWeb.Router do
 
     get "/", PageController, :index
     resources "/staffs", StaffController
+    resources "/staffPayments", StaffPaymentLineController
   end
 
   # Other scopes may use custom stacks.

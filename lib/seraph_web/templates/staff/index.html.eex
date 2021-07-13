@@ -23,7 +23,7 @@
               <td><%= staff.active %></td>
               <td><%= staff.email %></td>
               <td><%= staff.birthDate %></td>
-
+              
               <td>
                 <%= link "Show", to: Routes.staff_path(@conn, :show, staff) %>
                 <%= link "Edit", to: Routes.staff_path(@conn, :edit, staff) %>
